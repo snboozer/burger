@@ -16,7 +16,7 @@ app.set("view engine", "handlebars");
 
 var connection = mysql.createConnection({
   host: "localhost",
-  port: 3306,
+  port: process.env.PORT || 3306,
   user: "root",
   password: "Daffy1988",
   database: "burgers_db"
